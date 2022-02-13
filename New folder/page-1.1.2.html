@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--input type="image" src="/assets/images/btn-login.png" name="myButton" height="38" width="115"-->
+    <title>
+        Techacks placement web application
+    </title>
+    <style>
+        body {
+            background-image:url('8488effe-0f39-41a6-8b94-70c8919f8174.jpg');
+            background-color: blue;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        ::backdrop .bg-img {
+
+            /* Control the height of the image */
+
+            /* Center and scale the image nicely */
+            background-size: cover;
+        }
+
+        /* Add styles to the form container */
+        .container {
+            position: relative;
+            position: absolute;
+            width: 350px;
+            height: 500px;
+            left: 50%;
+            top: 50%;
+            border-radius: 10px;
+            padding: 16px;
+            margin: 0;
+            background-color: white;
+            transform: translate(-50%, -50%);
+            line-height: 40px;
+        }
+
+
+        /* Full-width input fields */
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Set a style for the submit button */
+        .btn {
+            background-color: green;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<div class="bg-img">
+    <form action="/action_page.php" class="container">
+        <h1>Signin as college</h1>
+
+        <label for="email"><b>College/University Name</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <p class="forgot"><a href="#">Forgot Password?</a></p>
+
+        <button type="submit" class="btn">Sign in</button>
+    </form>
+</div>
+
+</html>

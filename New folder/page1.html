@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+    <title>
+        login and sign up page
+    </title>
+    <style>
+        p {text-align: center;}
+        div {text-align: center;}
+        </style>
+    <style>
+        body {
+            background-color: rgb(190, 216, 231);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        ::backdrop
+        .bg-img {
+           background-size: cover;
+        }
+        .container {
+            position: relative;
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            left: 50%;
+            top: 50%;
+            border-radius: 10px;
+            padding: 16px;
+            margin: 0;
+            background-color: whitesmoke;
+            transform: translate(-50%, -50%);
+            line-height: 40px;
+        }
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        .btn {
+            background-color: orange;
+          position:absolute;
+          position:relative;
+          margin:auto;
+          display:flex;
+            color: black;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 40%;
+            opacity: 1.2;
+        }
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<div>
+<font  size="5px"> 
+  <h1 style="color:rgb(1, 7, 1)" >TECHACKS</h1>
+  </font>
+  </div>
+<div class="bg-img">
+    <form  action="page11html" method="get" class="container">
+   
+        <div>
+        <a href="page11.html">
+        <button type="submit" class="btn">Login</button>
+        </a>
+        </div>
+      <br>
+        <div>
+        <button type="submit" class="btn">Sign up</button>
+        </div>
+    </form>
+</div>
+</html>

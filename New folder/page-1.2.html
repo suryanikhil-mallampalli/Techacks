@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        login page
+    </title>
+    <style>
+        body {
+            background-image:url('8488effe-0f39-41a6-8b94-70c8919f8174.jpg');
+            background-color: blue;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        ::backdrop
+        .bg-img {
+           background-size: cover;
+        }
+        .container {
+            position: relative;
+            position: absolute;
+            width: 350px;
+            height: 250px;
+            left: 50%;
+            top: 50%;
+            border-radius: 10px;
+            padding: 16px;
+            margin: 0;
+            background-color: white;
+            transform: translate(-50%, -50%);
+            line-height: 40px;
+        }
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        .btn {
+            background-color: green;
+            color: white;
+            margin:auto;
+            display:flex;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 40%;
+            opacity: 0.9;
+        }
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<div class="bg-img">
+    <form action="/action_page.php" class="container">
+        <h1>Login as </h1>
+        <div>
+        <button type="submit" class="btn">Company</button>
+        </div>
+      <br>
+        <div>
+        <button type="submit" class="btn">Institute</button>
+        </div>
+    </form>
+</div>
+</html>
