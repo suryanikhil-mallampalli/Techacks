@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        login page
+    </title>
+    <style>
+        body {
+            background-image:url('./background.jpg');
+            background-color: blue;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        ::backdrop
+        .bg-img {
+           background-size: cover;
+        }
+        .container {
+            position: relative;
+            position: absolute;
+            width: 350px;
+            height: 250px;
+            left: 50%;
+            top: 50%;
+            border-radius: 10px;
+            padding: 16px;
+            margin: 0;
+            background-color: white;
+            transform: translate(-50%, -50%);
+            line-height: 40px;
+        }
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        .btn {
+            background-color: orange;
+            color: rgb(8, 4, 4);
+            margin:auto;
+            display:flex;
+            top:50%;
+            left:50%;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 40%;
+            opacity: 0.9;
+        }
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+    <style>
+        h1{color:rgb(0, 81, 255)}
+    </style>
+</head>
+<div class="bg-img">
+    <div  class="container">
+        <h1>Login as </h1>
+        <div>
+            <a href="./signin_company.html">
+        <button type="submit" class="btn">Company</button>
+            </a>
+        </div>
+      <br>
+        <div>
+            <a href="./signin_college.html">
+        <button type="submit" class="btn">Institute</button>
+            </a>
+
+        </div>
+    </div>
+</div>
+</html>
